@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="common" template="/general_layout/layOut.jsp">
+        <put-attribute name="header" value="/general_layout/header.jsp"/>
+        <put-attribute name="footer" value="/general_layout/footer.jsp"/>
+    </definition>
+    <definition name="trang-chu" extends="common">
+        <put-attribute name="title" value="Trang chủ"/>
+        <put-attribute name="body" value="/views/trang_chu.jsp"/>
+    </definition>
+    <definition name="quan-ly-san-pham" extends="common">
+        <put-attribute name="title" value="Quản lý sản phẩm"/>
+        <put-attribute name="body" value="/views/quan_ly_san_pham.jsp"/>
+    </definition>
+    <definition name="quan-ly-danh-muc" extends="common">
+        <put-attribute name="title" value="Quản lý danh mục"/>
+        <put-attribute name="body" value="/views/quan_ly_danh_muc.jsp"/>
+    </definition>
+    <definition name="dang-nhap" extends="common">
+        <put-attribute name="header" value=""/>
+        <put-attribute name="footer" value=""/>
+        <put-attribute name="title" value="Đăng nhập"/>
+        <put-attribute name="body" value="/views/dang_nhap.jsp"/>
+    </definition>
+</tiles-definitions>
